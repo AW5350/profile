@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anmol Waraich - Creative IT Professional</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        header {
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.5s ease;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            color: #34495e;
+        }
+
+        header:hover h1 {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .about-section, .skills-section, .contact-section {
+            padding: 50px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skills-section {
+            background-color: #ecf0f1;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .skills-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skills-list .skill {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .skills-list .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .skills-list .skill-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .progress {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress .progress-bar {
+            height: 8px;
+            background-color: #2ecc71;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+
+        /* Load progress bars on hover */
+        .skills-list .skill:hover .progress-bar {
+            width: 100%;
+        }
+
+        .contact-section a {
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            color: white;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            margin: 15px 10px;
+            transition: all 0.4s ease;
+        }
+
+        .contact-section a:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        footer {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: #ecf0f1;
+            padding: 30px;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Make it responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header h2 {
+                font-size: 1.2rem;
+            }
+
+            .skills-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="floating">
+            <h1>Anmol Waraich</h1>
+            <h2>Innovative IT Professional | Creative Problem Solver</h2>
+        </header>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h3>About Me</h3>
+            <p>
+                Hello! I'm Anmol Waraich, currently in my third year at Scuola Bottega. I am passionate about technology, and I'm seeking to build a career in IT. I love solving complex problems and learning new skills.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h3 class="skills-title">Skills & Expertise</h3>
+            <div class="skills-list">
+                <div class="skill">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h4>HTML</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h4>CSS</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h4>JavaScript</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <h4>PHP</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Web Development</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Networking</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon">🛠️</div>
+                    <h4>Troubleshooting</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon">☁️</div>
+                    <h4>Cloud Computing</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon">📊</div>
+                    <h4>Data Analysis</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h3>Contact Me</h3>
+            <p>If you'd like to get in touch with me, feel free to drop me an email.</p>
+            <a href="mailto:anmol.waraich@scuolabottega.net">Email
